@@ -1,12 +1,12 @@
 # Single Page CV
-- https://roadmap.sh/projects/single-page-cv
+https://roadmap.sh/projects/single-page-cv
 
 Um projeto simples de currículo profissional em página única (Single Page CV), desenvolvido com HTML5 semântico e CSS3 modular.
 
 ---
 
 ## 📌 Sobre o Projeto
-
+https://roadmap.sh/projects/single-page-cv
 Este projeto é um exercício prático de desenvolvimento web focado em:
 - Estruturação semântica com HTML5.
 - Meta tags e integração Open Graph para pré-visualização em redes sociais.
