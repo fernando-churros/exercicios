@@ -1,0 +1,13 @@
+:root {
+    font-size: 16px;
+}
+
+ul {
+    list-style: disc;
+    list-style-position: inside;
+    margin: 0px 0px 10px 0px;
+}
+
+li, p {
+    margin: 10px 0px;
+}
