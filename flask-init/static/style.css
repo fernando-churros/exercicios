@@ -32,3 +32,17 @@
   flex-direction: column;
   row-gap: 0.5rem;
 }
+
+.form > div {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 1fr);
+}
+
+.form label {
+  grid-column: 1/2;
+}
+
+.form input {
+  grid-column: 2/5
+}
+
