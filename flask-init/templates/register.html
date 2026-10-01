@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+
+{% block title %}Registrar{% endblock %}
+
+{% block main %}
+<section class="container_form">
+  <h2>Register</h2>
+
+  <form class="form">
+    <div>
+      <label for="name">Nome</label>
+      <input name="user_name" type="text" id="name">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input name="user_email" type="text" id="email">
+    </div>
+    <div>
+      <label for="passwd">Senha</label>
+        <input name="user_passwd" type="text" id="passwd">
+    </div>
+  </form>
+</section>
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %} | Flask</title>
+    <link rel="stylesheet" type="text/css" href="static/reset.css">
+    <link rel="stylesheet" type="text/css" href="static/root.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    {% block style %}
+    {% endblock %}
+</head>
+<body>
+    <header class="header">
+      {% block header %} {% endblock %}
+    </header>
+
+    <main class="main">
+    {% block main %} {% endblock main %}
+    </main>
+
+    <footer class="footer">
+      {% block footer %}{% endblock %}
+    </footer>
+</body>
+</html>

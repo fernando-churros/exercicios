@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+{% block title %}Login{% endblock title %}
+{% block main %}
+<section class="container_form">
+  <h2>Login</h2>
+
+  <form class="form" action="/user" method="POST">
+    <div>
+      <label for="name">Nome</label>
+      <input name="user_name" type="text" id="name">
+    </div>
+
+    <div>
+      <label for="passwd">Senha</label>
+      <input name="user_passwd" type="text" id="passwd">
+    </div>
+
+    <button type="submit">Login</button>
+  </form>
+</section>
+{% endblock main %}
