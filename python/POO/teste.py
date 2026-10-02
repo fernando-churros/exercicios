@@ -1,14 +1,7 @@
-from abc import ABC, abstractmethod
+import re
 
-class Carteira:
-    def __init__(self, valor):
-        self.__saldo = valor
+e = 'fernando_churos@pm.com'
 
-    @property
-    def saldo(self):
-        return self.__saldo
+x = re.search(".+@..+\.com", e) 
+print(x)
 
-    def __eq__(self, other):
-        if self.__saldo == other.saldo:
-            return True
-        return False
