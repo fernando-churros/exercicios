@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block stylesheet %}
+.main {
+  display: block;
+}
+{% endblock %}
+
+{% block main %}
+<p>Nome: {{ user.name }}</p>
+<p>Email: {{ user.email }}</p>
+<p>Senha: {{ user.passwd }}</p>
+{% endblock %}
+
