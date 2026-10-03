@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 from User import User
+import mariadb
 
 app = Flask(__name__)
 
@@ -32,9 +33,13 @@ def user_cadastro():
     passwd = r['user_passwd']
 
     try:
-        new_user = User(name, email, passwd)
-        print(new_user.name)
-        return render_template('cadastro.html', user=new_user)
+        u = User(name, email, passwd)
+        with mariadb.connect(user='root', password='2357', host='localhost', database='cadastro') as conn:
+            with conn.cursor() as cursor:
+                cursor.execute(f"INSERT INTO users (name, email, passwd) values ('{u.name}', '{u.email}', '{u.passwd}')")
+                conn.commit()
+
+        return render_template('cadastro.html', user=u)
     except ValueError as e:
         return f'<h1>{e}</h1>'
 
